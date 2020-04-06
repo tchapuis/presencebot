@@ -1,0 +1,22 @@
+{
+  "name": "presencebot",
+  "version": "1.0.0",
+  "description": "A Discord Bot for Simplon during quarantine",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/amstr4d/presencebot.git"
+  },
+  "author": "Thomas Chapuis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/amstr4d/presencebot/issues"
+  },
+  "homepage": "https://gitlab.com/amstr4d/presencebot#readme",
+  "dependencies": {
+    "discord.js": "^12.1.1"
+  }
+}
