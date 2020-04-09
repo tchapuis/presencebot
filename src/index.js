@@ -11,7 +11,10 @@ client.once('ready', () => {
     const job = new CronJob('25 9,12,13,17 * * *', () => {
         console.log('sending message');
         client.channels.fetch(process.env.CHANNEL_ID).then(
-            channel => channel.send('@everyone n\'oubliez pas d\'émarger !')
+            (channel) => {
+                const currentDate = new Date();
+                channel.send('@everyone n\'oubliez pas d\'émarger ! Date :' + currentDate.toLocaleString('fr-FR', {timeZone: 'Europe/Paris'}))
+            }
         );
     }, null, true, 'Europe/Paris');
     
